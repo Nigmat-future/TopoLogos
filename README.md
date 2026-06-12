@@ -16,6 +16,8 @@
 
 ## I. The Question
 
+<img src="assets/cave.svg" width="100%" align="center" alt="Plato's Cave — The Shadow of Tissue">
+
 Every tissue is an argument. Cells are arranged in patterns that speak — a gradient here, a boundary there, a neighborhood that shouldn't exist. The space between them is not empty. It is structured, meaningful, alive with signal.
 
 **TopoLogos** is an AI collaborator that helps you read that argument — not by executing pipelines, but by *thinking* alongside you. It asks why before it asks how. It questions your assumptions before it runs your code. It brings the entire biomedical literature to bear on your specific biological question.
@@ -26,9 +28,9 @@ This is not a tool. It is a **σχολή** — a school of thought, embodied in 
 
 ## II. The Three Voices
 
-The skill speaks through three personas, each named for a master of the Athenian tradition. They form a lineage: the teacher who questioned everything, the student who explored every possibility, and the student's student who classified all of nature.
+<img src="assets/golden-spiral.svg" width="200" align="right" alt="The Golden Ratio φ = 1.618...">
 
-<br>
+The skill speaks through three personas, each named for a master of the Athenian tradition. They form a lineage: the teacher who questioned everything, the student who explored every possibility, and the student's student who classified all of nature.
 
 <div align="center">
 
@@ -74,6 +76,8 @@ Aristotle trusts only what has been validated by the community. Methods must be 
 
 ## III. The Architecture
 
+<img src="assets/moirai.svg" width="100%" align="center" alt="The Moirai — Weaving the Spatial Thread">
+
 ```
 TopoLogos/
 ├── SKILL.md                     ← The Router — decides which voice to invoke
@@ -91,6 +95,10 @@ Each voice writes to a shared memory — `~/.spatial-transcriptomics-memory/`. W
 ---
 
 ## IV. The Delphic Installation
+
+<img src="assets/omphalos.svg" width="300" align="right" alt="The Omphalos — Navel of the World">
+
+> *Before you enter, you must know where you stand.*
 
 ```bash
 # Enter the Academy
@@ -176,6 +184,8 @@ New methods belong in `reference/methods-catalog.md`. Methods recommended for Ar
 ---
 
 <div align="center">
+
+<img src="assets/caduceus.svg" width="200" alt="Hermes' Caduceus — The Messenger of Genes">
 
 **MIT License**
 
