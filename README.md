@@ -1,9 +1,6 @@
 <div align="center">
 
-# Τοπολόγος · TopoLogos
-
-*τόπος &nbsp;—&nbsp; place, space, the ground beneath a cell*  
-*λόγος &nbsp;—&nbsp; reason, discourse, the order that makes sense of it*
+<img src="assets/header.svg" width="100%" alt="TopoLogos — A Greek Temple of Spatial Reasoning">
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/Nigmat-future/TopoLogos)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

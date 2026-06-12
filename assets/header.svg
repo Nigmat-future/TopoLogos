@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%">
+  <defs>
+    <!-- 古典金色调色板 -->
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37"/>
+      <stop offset="50%" style="stop-color:#F4E4BC"/>
+      <stop offset="100%" style="stop-color:#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="gold-gradient-v" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37"/>
+      <stop offset="50%" style="stop-color:#F4E4BC"/>
+      <stop offset="100%" style="stop-color:#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#D4AF37" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="400" fill="url(#marble)"/>
+
+  <!-- 希腊回纹边框 (Meander) -->
+  <g fill="none" stroke="url(#gold-gradient)" stroke-width="2" opacity="0.6">
+    <!-- 顶部边框 -->
+    <path d="M 50 30 L 70 30 L 70 50 L 90 50 L 90 30 L 110 30 L 110 50 L 130 50 L 130 30 L 150 30 L 150 50 L 170 50 L 170 30 L 190 30 L 190 50 L 210 50 L 210 30 L 230 30 L 230 50 L 250 50 L 250 30 L 270 30 L 270 50 L 290 50 L 290 30 L 310 30 L 310 50 L 330 50 L 330 30 L 350 30 L 350 50 L 370 50 L 370 30 L 390 30 L 390 50 L 410 50 L 410 30 L 430 30 L 430 50 L 450 50 L 450 30 L 470 30 L 470 50 L 490 50 L 490 30 L 510 30 L 510 50 L 530 50 L 530 30 L 550 30 L 550 50 L 570 50 L 570 30 L 590 30 L 590 50 L 610 50 L 610 30 L 630 30 L 630 50 L 650 50 L 650 30 L 670 30 L 670 50 L 690 50 L 690 30 L 710 30 L 710 50 L 730 50 L 730 30 L 750 30 L 750 50 L 770 50 L 770 30 L 790 30 L 790 50 L 810 50 L 810 30 L 830 30 L 830 50 L 850 50 L 850 30 L 870 30 L 870 50 L 890 50 L 890 30 L 910 30 L 910 50 L 930 50 L 930 30 L 950 30 L 950 50 L 970 50 L 970 30 L 990 30 L 990 50 L 1010 50 L 1010 30 L 1030 30 L 1030 50 L 1050 50 L 1050 30 L 1070 30 L 1070 50 L 1090 50 L 1090 30 L 1110 30 L 1110 50 L 1130 50 L 1130 30 L 1150 30"/>
+    <!-- 底部边框 -->
+    <path d="M 50 370 L 70 370 L 70 350 L 90 350 L 90 370 L 110 370 L 110 350 L 130 350 L 130 370 L 150 370 L 150 350 L 170 350 L 170 370 L 190 370 L 190 350 L 210 350 L 210 370 L 230 370 L 230 350 L 250 350 L 250 370 L 270 370 L 270 350 L 290 350 L 290 370 L 310 370 L 310 350 L 330 350 L 330 370 L 350 370 L 350 350 L 370 350 L 370 370 L 390 370 L 390 350 L 410 350 L 410 370 L 430 370 L 430 350 L 450 350 L 450 370 L 470 370 L 470 350 L 490 350 L 490 370 L 510 370 L 510 350 L 530 350 L 530 370 L 550 370 L 550 350 L 570 350 L 570 370 L 590 370 L 590 350 L 610 350 L 610 370 L 630 370 L 630 350 L 650 350 L 650 370 L 670 370 L 670 350 L 690 350 L 690 370 L 710 370 L 710 350 L 730 350 L 730 370 L 750 370 L 750 350 L 770 350 L 770 370 L 790 370 L 790 350 L 810 350 L 810 370 L 830 370 L 830 350 L 850 350 L 850 370 L 870 370 L 870 350 L 890 350 L 890 370 L 910 370 L 910 350 L 930 350 L 930 370 L 950 370 L 950 350 L 970 350 L 970 370 L 990 370 L 990 350 L 1010 350 L 1010 370 L 1030 370 L 1030 350 L 1050 350 L 1050 370 L 1070 370 L 1070 350 L 1090 350 L 1090 370 L 1110 370 L 1110 350 L 1130 350 L 1130 370 L 1150 370"/>
+  </g>
+
+  <!-- 希腊柱廊 (Doric Columns) -->
+  <g fill="none" stroke="url(#gold-gradient-v)" stroke-width="2" opacity="0.5">
+    <!-- 左柱 -->
+    <rect x="80" y="80" width="60" height="240" rx="2"/>
+    <rect x="85" y="85" width="50" height="230" rx="1" opacity="0.3"/>
+    <!-- 柱顶 (Capital) -->
+    <rect x="70" y="75" width="80" height="15" rx="2"/>
+    <rect x="75" y="65" width="70" height="10" rx="2"/>
+    <!-- 柱底 (Base) -->
+    <rect x="70" y="320" width="80" height="15" rx="2"/>
+    <rect x="75" y="335" width="70" height="10" rx="2"/>
+    <!-- 柱槽 (Fluting) -->
+    <line x1="95" y1="80" x2="95" y2="320" opacity="0.4"/>
+    <line x1="105" y1="80" x2="105" y2="320" opacity="0.4"/>
+    <line x1="115" y1="80" x2="115" y2="320" opacity="0.4"/>
+    <line x1="125" y1="80" x2="125" y2="320" opacity="0.4"/>
+
+    <!-- 右柱 -->
+    <rect x="1060" y="80" width="60" height="240" rx="2"/>
+    <rect x="1065" y="85" width="50" height="230" rx="1" opacity="0.3"/>
+    <!-- 柱顶 -->
+    <rect x="1050" y="75" width="80" height="15" rx="2"/>
+    <rect x="1055" y="65" width="70" height="10" rx="2"/>
+    <!-- 柱底 -->
+    <rect x="1050" y="320" width="80" height="15" rx="2"/>
+    <rect x="1055" y="335" width="70" height="10" rx="2"/>
+    <!-- 柱槽 -->
+    <line x1="1075" y1="80" x2="1075" y2="320" opacity="0.4"/>
+    <line x1="1085" y1="80" x2="1085" y2="320" opacity="0.4"/>
+    <line x1="1095" y1="80" x2="1095" y2="320" opacity="0.4"/>
+    <line x1="1105" y1="80" x2="1105" y2="320" opacity="0.4"/>
+  </g>
+
+  <!-- 柱顶楣梁 (Architrave) -->
+  <rect x="50" y="40" width="1100" height="20" fill="none" stroke="url(#gold-gradient)" stroke-width="2" opacity="0.4"/>
+  <rect x="60" y="45" width="1080" height="10" fill="none" stroke="url(#gold-gradient)" stroke-width="1" opacity="0.3"/>
+
+  <!-- 月桂冠 (Laurel Wreath) -->
+  <g transform="translate(600, 120)" filter="url(#shadow)">
+    <!-- 左侧叶子 -->
+    <g fill="none" stroke="url(#gold-gradient)" stroke-width="2.5" stroke-linecap="round">
+      <!-- 左上方 -->
+      <path d="M 0 0 Q -25 -20 -40 -10"/>
+      <path d="M 0 0 Q -20 -30 -35 -25"/>
+      <path d="M 0 0 Q -10 -35 -20 -30"/>
+      <path d="M 0 0 Q -5 -25 -15 -20"/>
+      <!-- 左下方 -->
+      <path d="M 0 0 Q -30 15 -45 10"/>
+      <path d="M 0 0 Q -25 25 -40 20"/>
+      <path d="M 0 0 Q -15 30 -25 25"/>
+      <path d="M 0 0 Q -10 20 -20 15"/>
+    </g>
+    <!-- 右侧叶子 -->
+    <g fill="none" stroke="url(#gold-gradient)" stroke-width="2.5" stroke-linecap="round">
+      <path d="M 0 0 Q 25 -20 40 -10"/>
+      <path d="M 0 0 Q 20 -30 35 -25"/>
+      <path d="M 0 0 Q 10 -35 20 -30"/>
+      <path d="M 0 0 Q 5 -25 15 -20"/>
+      <path d="M 0 0 Q 30 15 45 10"/>
+      <path d="M 0 0 Q 25 25 40 20"/>
+      <path d="M 0 0 Q 15 30 25 25"/>
+      <path d="M 0 0 Q 10 20 20 15"/>
+    </g>
+    <!-- 丝带 -->
+    <path d="M -30 -25 Q -35 -35 -40 -30" stroke="url(#gold-gradient)" stroke-width="2" fill="none"/>
+    <path d="M 30 -25 Q 35 -35 40 -30" stroke="url(#gold-gradient)" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- 猫头鹰 (Athena's Owl) -->
+  <g transform="translate(600, 120)" opacity="0.7" filter="url(#shadow)">
+    <!-- 猫头鹰轮廓 -->
+    <ellipse cx="0" cy="0" rx="12" ry="15" fill="none" stroke="url(#gold-gradient)" stroke-width="2"/>
+    <!-- 眼睛 -->
+    <circle cx="-5" cy="-2" r="4" fill="none" stroke="url(#gold-gradient)" stroke-width="1.5"/>
+    <circle cx="5" cy="-2" r="4" fill="none" stroke="url(#gold-gradient)" stroke-width="1.5"/>
+    <circle cx="-5" cy="-2" r="1.5" fill="url(#gold-gradient)"/>
+    <circle cx="5" cy="-2" r="1.5" fill="url(#gold-gradient)"/>
+    <!-- 喙 -->
+    <path d="M 0 3 L -2 8 L 2 8 Z" fill="url(#gold-gradient)" stroke="none"/>
+    <!-- 耳朵 -->
+    <path d="M -8 -12 L -12 -18 L -5 -14" fill="none" stroke="url(#gold-gradient)" stroke-width="1.5"/>
+    <path d="M 8 -12 L 12 -18 L 5 -14" fill="none" stroke="url(#gold-gradient)" stroke-width="1.5"/>
+  </g>
+
+  <!-- 主标题 -->
+  <g text-anchor="middle" filter="url(#glow)">
+    <!-- 希腊文 -->
+    <text x="600" y="240" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="normal" font-style="italic" fill="url(#gold-gradient)" letter-spacing="4">Τοπολόγος</text>
+    <!-- 英文 -->
+    <text x="600" y="285" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="normal" fill="url(#gold-gradient)" opacity="0.9" letter-spacing="6">TopoLogos</text>
+  </g>
+
+  <!-- 副标题 -->
+  <text x="600" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic" fill="#F4E4BC" opacity="0.8" letter-spacing="2">
+    τόπος — place, space, the ground beneath a cell · λόγος — reason, the order that makes sense of it
+  </text>
+
+  <!-- 底部装饰线 -->
+  <line x1="350" y1="360" x2="850" y2="360" stroke="url(#gold-gradient)" stroke-width="1" opacity="0.5"/>
+  <circle cx="350" cy="360" r="3" fill="url(#gold-gradient)" opacity="0.5"/>
+  <circle cx="850" cy="360" r="3" fill="url(#gold-gradient)" opacity="0.5"/>
+  <circle cx="600" cy="360" r="2" fill="url(#gold-gradient)" opacity="0.5"/>
+
+  <!-- 角落几何装饰 -->
+  <g stroke="url(#gold-gradient)" stroke-width="1" fill="none" opacity="0.4">
+    <circle cx="50" cy="50" r="30"/>
+    <circle cx="50" cy="50" r="20"/>
+    <circle cx="50" cy="50" r="10"/>
+    <circle cx="1150" cy="50" r="30"/>
+    <circle cx="1150" cy="50" r="20"/>
+    <circle cx="1150" cy="50" r="10"/>
+    <circle cx="50" cy="350" r="30"/>
+    <circle cx="50" cy="350" r="20"/>
+    <circle cx="50" cy="350" r="10"/>
+    <circle cx="1150" cy="350" r="30"/>
+    <circle cx="1150" cy="350" r="20"/>
+    <circle cx="1150" cy="350" r="10"/>
+  </g>
+</svg>
