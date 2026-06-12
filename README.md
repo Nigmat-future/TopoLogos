@@ -1,6 +1,8 @@
-# Spatial Transcriptomics Skill
+# TopoLogos
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/yourusername/spatial-transcriptomics-skill)
+τόπος (space) + λόγος (reason)
+
+[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/Nigmat-future/TopoLogos)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-OpenCode%20%7C%20Claude%20Code%20%7C%20Codex%20CLI-green)]()
 
@@ -33,21 +35,21 @@ This skill is prompt engineering, not a standalone analysis tool. It augments yo
 Clone into your skills directory:
 
 ```bash
-git clone https://github.com/yourusername/spatial-transcriptomics-skill.git \
+git clone https://github.com/Nigmat-future/TopoLogos.git \
   ~/.opencode/skills/spatial-transcriptomics
 ```
 
 ### Claude Code
 
 ```bash
-git clone https://github.com/yourusername/spatial-transcriptomics-skill.git \
+git clone https://github.com/Nigmat-future/TopoLogos.git \
   ~/.claude/skills/spatial-transcriptomics
 ```
 
 ### Codex CLI
 
 ```bash
-git clone https://github.com/yourusername/spatial-transcriptomics-skill.git \
+git clone https://github.com/Nigmat-future/TopoLogos.git \
   ~/.codex/skills/spatial-transcriptomics
 ```
 
