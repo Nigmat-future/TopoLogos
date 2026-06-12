@@ -1,59 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Delphic Omphalos — navel of the world">
   <defs>
-    <radialGradient id="marble" cx="50%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#1a1f2e"/>
-      <stop offset="60%" stop-color="#0f1320"/>
+    <radialGradient id="bg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#1e2436"/>
+      <stop offset="55%" stop-color="#10141f"/>
       <stop offset="100%" stop-color="#080a12"/>
     </radialGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <radialGradient id="halo" cx="50%" cy="38%" r="40%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F4E4BC"/>
       <stop offset="50%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#B8941E"/>
+      <stop offset="100%" stop-color="#9A7B28"/>
     </linearGradient>
-    <linearGradient id="goldFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.2"/>
+    <linearGradient id="stone" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#4a5268"/>
+      <stop offset="40%" stop-color="#353d52"/>
+      <stop offset="100%" stop-color="#222836"/>
     </linearGradient>
+    <linearGradient id="stoneHi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6a7488"/>
+      <stop offset="100%" stop-color="#3a4258"/>
+    </linearGradient>
+    <linearGradient id="serpent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3d6b62"/>
+      <stop offset="50%" stop-color="#5a9a8c"/>
+      <stop offset="100%" stop-color="#2d5048"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="600" height="600" fill="url(#marble)"/>
-  <!-- Omphalos stone body -->
-  <ellipse cx="300" cy="340" rx="110" ry="150" fill="none" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
-  <ellipse cx="300" cy="340" rx="95" ry="135" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <!-- Net pattern on stone (sacred netting) -->
-  <path d="M210 280 Q300 260 390 280" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5" stroke-linecap="round"/>
-  <path d="M205 320 Q300 300 395 320" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5" stroke-linecap="round"/>
-  <path d="M210 360 Q300 340 390 360" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5" stroke-linecap="round"/>
-  <path d="M220 400 Q300 380 380 400" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5" stroke-linecap="round"/>
-  <path d="M240 440 Q300 420 360 440" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5" stroke-linecap="round"/>
-  <!-- Cracks on stone -->
-  <path d="M270 220 L275 260 L265 290" fill="none" stroke="#F4E4BC" stroke-width="0.7" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M330 250 L325 280 L335 310" fill="none" stroke="#F4E4BC" stroke-width="0.7" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M280 370 L285 400 L278 430" fill="none" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.4" stroke-linecap="round"/>
-  <!-- Serpent coiled around stone -->
-  <path d="M195 430 C180 400 190 370 210 350 C230 330 250 340 260 310 C270 280 250 260 270 240 C290 220 310 230 320 210 C330 190 310 170 330 160" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
-  <!-- Serpent head -->
-  <path d="M330 160 C340 150 350 155 345 165 C340 170 330 168 330 160Z" fill="#D4AF37" stroke="#F4E4BC" stroke-width="1" stroke-linecap="round"/>
-  <!-- Serpent eye -->
-  <circle cx="338" cy="158" r="2" fill="#0f1320"/>
-  <!-- Serpent tongue -->
-  <path d="M345 160 L355 155 M345 160 L355 163" fill="none" stroke="#D4AF37" stroke-width="1" stroke-linecap="round"/>
-  <!-- Spiral pattern on serpent body -->
-  <path d="M200 420 C210 415 215 420 210 425" fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M230 360 C240 355 245 360 240 365" fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M265 300 C275 295 280 300 275 305" fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M300 240 C310 235 315 240 310 245" fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Base platform -->
-  <path d="M220 490 L380 490 L370 510 L230 510 Z" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
-  <path d="M240 510 L360 510 L355 520 L245 520 Z" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Radiating lines from omphalos (navel of the world) -->
-  <line x1="300" y1="190" x2="300" y2="100" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="190" y1="340" x2="100" y2="340" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="410" y1="340" x2="500" y2="340" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="220" y1="250" x2="140" y2="180" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="380" y1="250" x2="460" y2="180" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3" stroke-linecap="round"/>
-  <!-- Corner ornaments -->
-  <path d="M30 30 L30 70 M30 30 L70 30" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M570 30 L570 70 M570 30 L530 30" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M30 570 L30 530 M30 570 L70 570" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M570 570 L570 530 M570 570 L530 570" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
+
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="250" r="200" fill="url(#halo)"/>
+
+  <!-- World-axis rays -->
+  <g stroke="#D4AF37" stroke-width="0.7" opacity="0.1">
+    <line x1="300" y1="300" x2="300" y2="60"/>
+    <line x1="300" y1="300" x2="540" y2="300"/>
+    <line x1="300" y1="300" x2="300" y2="540"/>
+    <line x1="300" y1="300" x2="60" y2="300"/>
+    <line x1="300" y1="300" x2="470" y2="130"/>
+    <line x1="300" y1="300" x2="130" y2="470"/>
+    <line x1="300" y1="300" x2="470" y2="470"/>
+    <line x1="300" y1="300" x2="130" y2="130"/>
+  </g>
+
+  <!-- Pedestal -->
+  <ellipse cx="300" cy="490" rx="130" ry="18" fill="#0a0c12"/>
+  <path d="M195 475 L195 505 Q300 520 405 505 L405 475 Q300 460 195 475Z" fill="url(#stone)"/>
+  <ellipse cx="300" cy="475" rx="105" ry="12" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Column -->
+  <path d="M238 475 L244 290 Q244 268 300 258 Q356 268 356 290 L362 475Z" fill="url(#stone)"/>
+  <g opacity="0.12" stroke="#8890a0" stroke-width="1.2">
+    <line x1="262" y1="280" x2="264" y2="470"/>
+    <line x1="282" y1="268" x2="283" y2="470"/>
+    <line x1="300" y1="262" x2="300" y2="470"/>
+    <line x1="318" y1="268" x2="317" y2="470"/>
+    <line x1="338" y1="280" x2="336" y2="470"/>
+  </g>
+
+  <!-- Omphalos stone -->
+  <ellipse cx="300" cy="195" rx="78" ry="92" fill="url(#stoneHi)"/>
+  <ellipse cx="300" cy="185" rx="58" ry="68" fill="#4a5268" opacity="0.4"/>
+  <!-- Sacred net pattern -->
+  <g fill="none" stroke="#D4AF37" stroke-width="0.8" opacity="0.35">
+    <ellipse cx="300" cy="188" rx="42" ry="50"/>
+    <ellipse cx="300" cy="188" rx="28" ry="34"/>
+    <path d="M258 175 Q300 155 342 175 Q300 195 258 175"/>
+    <path d="M258 200 Q300 220 342 200 Q300 180 258 200"/>
+    <path d="M270 158 Q300 145 330 158"/>
+    <path d="M270 218 Q300 231 330 218"/>
+  </g>
+  <!-- Navel -->
+  <circle cx="300" cy="186" r="6" fill="url(#gold)" filter="url(#glow)"/>
+  <circle cx="300" cy="186" r="2" fill="#F4E4BC"/>
+
+  <!-- Python serpent -->
+  <path d="M420 95
+           C455 120 448 175 415 205
+           C382 235 395 285 420 315
+           C445 345 425 385 390 400
+           C355 415 325 395 332 365
+           C340 335 370 325 385 300
+           C405 268 388 225 360 205
+           C332 185 340 140 365 115
+           C385 95 375 70 400 62
+           C410 58 418 72 420 95Z"
+        fill="url(#serpent)" opacity="0.92"/>
+  <g fill="#2a4840" opacity="0.35">
+    <ellipse cx="405" cy="145" rx="8" ry="5" transform="rotate(-25 405 145)"/>
+    <ellipse cx="388" cy="190" rx="8" ry="5" transform="rotate(-10 388 190)"/>
+    <ellipse cx="378" cy="240" rx="8" ry="5" transform="rotate(8 378 240)"/>
+    <ellipse cx="392" cy="290" rx="7" ry="4" transform="rotate(22 392 290)"/>
+    <ellipse cx="365" cy="340" rx="6" ry="4" transform="rotate(35 365 340)"/>
+  </g>
+  <!-- Head -->
+  <ellipse cx="418" cy="68" rx="18" ry="13" fill="#4a8278" transform="rotate(-18 418 68)"/>
+  <circle cx="426" cy="63" r="3.5" fill="#10141f"/>
+  <circle cx="427" cy="62" r="1.2" fill="#F4E4BC"/>
+  <path d="M432 68 Q442 72 438 80" fill="none" stroke="#3d6b62" stroke-width="2" stroke-linecap="round"/>
+  <path d="M436 72 L444 68 M436 74 L444 78" stroke="#c45c5c" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Corner meander accents -->
+  <g fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.35">
+    <path d="M40 40 H65 V55 H50 V70 H40 Z"/>
+    <path d="M560 40 H535 V55 H550 V70 H560 Z"/>
+    <path d="M40 560 H65 V545 H50 V530 H40 Z"/>
+    <path d="M560 560 H535 V545 H550 V530 H560 Z"/>
+  </g>
 </svg>

@@ -1,75 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Plato's Cave — shadows of tissue">
   <defs>
-    <linearGradient id="marble" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a1f2e"/>
-      <stop offset="50%" stop-color="#0f1320"/>
-      <stop offset="100%" stop-color="#080a12"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141820"/>
+      <stop offset="50%" stop-color="#0c0e14"/>
+      <stop offset="100%" stop-color="#080a10"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F4E4BC"/>
+    <radialGradient id="fire" cx="22%" cy="72%" r="32%">
+      <stop offset="0%" stop-color="#FFB347" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#D4AF37" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="90%" cy="12%" r="28%">
+      <stop offset="0%" stop-color="#F4E4BC" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#D4AF37" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e2230"/>
+      <stop offset="100%" stop-color="#12151e"/>
+    </linearGradient>
+    <linearGradient id="goldPath" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A7B28" stop-opacity="0"/>
       <stop offset="50%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#B8941E"/>
+      <stop offset="100%" stop-color="#9A7B28" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="fireGlow" cx="25%" cy="60%" r="30%">
-      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.4"/>
-      <stop offset="40%" stop-color="#D4AF37" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="sunGlow" cx="88%" cy="15%" r="25%">
-      <stop offset="0%" stop-color="#F4E4BC" stop-opacity="0.9"/>
-      <stop offset="30%" stop-color="#D4AF37" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
-    </radialGradient>
+    <filter id="fireBlur">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
   </defs>
-  <rect width="1200" height="400" fill="url(#marble)"/>
+
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#fire)"/>
+
   <!-- Cave ceiling -->
-  <path d="M0 0 L0 120 Q100 80 200 130 Q300 60 400 100 Q500 50 600 90 Q700 40 800 80 Q900 30 1000 70 Q1100 50 1200 90 L1200 0 Z" fill="#0a0d16" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.2"/>
-  <!-- Cave walls -->
-  <path d="M0 120 Q50 200 80 280 Q100 340 120 400 L0 400 Z" fill="#0d1020" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.15"/>
-  <path d="M1200 90 Q1150 180 1120 260 Q1100 340 1080 400 L1200 400 Z" fill="#0d1020" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.15"/>
-  <!-- Fire glow -->
-  <ellipse cx="280" cy="320" rx="200" ry="120" fill="url(#fireGlow)"/>
+  <path d="M0 0 Q300 55 600 35 Q900 15 1200 50 L1200 0Z" fill="#06080c" opacity="0.7"/>
+  <path d="M0 70 Q400 30 600 50 Q800 70 1200 55" fill="none" stroke="#2a3040" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Left cave wall -->
+  <path d="M0 70 Q40 160 70 260 Q90 330 110 400 L0 400Z" fill="#0e1018"/>
+  <!-- Right wall slope -->
+  <path d="M1200 50 Q1160 150 1130 250 Q1110 330 1090 400 L1200 400Z" fill="#0e1018"/>
+
+  <!-- Shadow screen wall -->
+  <rect x="620" y="55" width="540" height="290" rx="3" fill="url(#wall)"/>
+  <rect x="620" y="55" width="540" height="290" rx="3" fill="none" stroke="#D4AF37" stroke-width="0.4" opacity="0.15"/>
+
+  <!-- Shadow puppets (tissue-like silhouettes) -->
+  <g opacity="0.5">
+    <!-- Cell cluster shadow -->
+    <circle cx="780" cy="180" r="22" fill="#3a4050"/>
+    <circle cx="755" cy="195" r="14" fill="#3a4050"/>
+    <circle cx="805" cy="192" r="16" fill="#3a4050"/>
+    <circle cx="770" cy="210" r="11" fill="#3a4050"/>
+    <circle cx="795" cy="215" r="13" fill="#3a4050"/>
+    <!-- Boundary shadow -->
+    <path d="M870 140 Q920 130 960 160 Q980 190 950 220 Q910 250 870 230 Q840 210 870 140Z" fill="#323848" opacity="0.7"/>
+    <!-- Gradient shadow (spatial pattern) -->
+    <ellipse cx="1020" cy="200" rx="55" ry="35" fill="#2e3444" opacity="0.6"/>
+    <ellipse cx="1040" cy="195" rx="35" ry="22" fill="#3a4050" opacity="0.4"/>
+  </g>
+
   <!-- Fire -->
-  <path d="M260 340 Q265 300 270 280 Q275 300 280 270 Q285 295 290 260 Q295 290 300 340" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
-  <path d="M265 340 Q270 310 275 295 Q280 310 285 280 Q290 305 295 340" fill="none" stroke="#F4E4BC" stroke-width="1.2" stroke-opacity="0.7" stroke-linecap="round"/>
-  <!-- Fire base -->
-  <path d="M250 345 Q275 330 300 345" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Prisoner silhouettes (chained, facing wall) -->
-  <!-- Prisoner 1 -->
-  <path d="M380 280 L380 340 M370 290 L360 310 M390 290 L400 310 M380 340 L375 395 M380 340 L385 395" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <circle cx="380" cy="272" r="8" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Chain 1 -->
-  <path d="M360 310 L340 315 L330 305" fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.5" stroke-linecap="round"/>
-  <!-- Prisoner 2 -->
-  <path d="M440 280 L440 340 M430 290 L420 310 M450 290 L460 310 M440 340 L435 395 M440 340 L445 395" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <circle cx="440" cy="272" r="8" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Chain 2 -->
-  <path d="M420 310 L400 315 L390 305" fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.5" stroke-linecap="round"/>
-  <!-- Prisoner 3 -->
-  <path d="M500 280 L500 340 M490 290 L480 310 M510 290 L520 310 M500 340 L495 395 M500 340 L505 395" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <circle cx="500" cy="272" r="8" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Shadows on wall (distorted projections) -->
-  <path d="M600 250 Q620 200 640 250 Q660 220 680 260 Q700 230 720 270" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.25" stroke-linecap="round"/>
-  <path d="M610 260 Q630 210 650 260 Q670 230 690 270" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.2" stroke-linecap="round"/>
-  <!-- Wall surface -->
-  <path d="M580 200 L580 400" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.15" stroke-linecap="round"/>
-  <!-- Sun opening (top right) -->
-  <ellipse cx="1050" cy="60" rx="120" ry="80" fill="url(#sunGlow)"/>
-  <!-- Sun rays -->
-  <line x1="1050" y1="60" x2="950" y2="120" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="1050" y1="60" x2="1000" y2="150" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="1050" y1="60" x2="1080" y2="140" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="1050" y1="60" x2="1120" y2="130" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <line x1="1050" y1="60" x2="980" y2="100" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.2" stroke-linecap="round"/>
-  <line x1="1050" y1="60" x2="1100" y2="90" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.2" stroke-linecap="round"/>
-  <!-- Ascending figure (escaping the cave) -->
-  <path d="M920 200 L920 260 M910 215 L895 240 M930 215 L945 240 M920 260 L912 310 M920 260 L928 310" fill="none" stroke="#F4E4BC" stroke-width="1.5" stroke-opacity="0.7" stroke-linecap="round"/>
-  <circle cx="920" cy="192" r="8" fill="none" stroke="#F4E4BC" stroke-width="1.5" stroke-opacity="0.7" stroke-linecap="round"/>
-  <!-- Path from cave to light -->
-  <path d="M580 300 Q700 250 800 200 Q860 170 920 200" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 6" stroke-linecap="round"/>
+  <g filter="url(#fireBlur)">
+    <ellipse cx="260" cy="310" rx="55" ry="38" fill="#E8923A" opacity="0.65"/>
+    <path d="M240 325 Q255 265 270 325 Q262 290 265 270 Q268 295 280 325" fill="#FFD166"/>
+    <path d="M250 322 Q262 285 272 322 Q266 300 265 282 Q264 300 250 322" fill="#FFF3D0"/>
+  </g>
+  <ellipse cx="260" cy="338" rx="42" ry="9" fill="#2a1a08" opacity="0.5"/>
+
+  <!-- Puppeteers -->
+  <g fill="#141820" opacity="0.9">
+    <ellipse cx="430" cy="250" rx="11" ry="13"/>
+    <path d="M430 263 L430 310 M418 278 L442 278" stroke="#141820" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M442 278 L458 240" stroke="#141820" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <ellipse cx="475" cy="258" rx="10" ry="12"/>
+    <path d="M475 270 L470 315 M463 285 L488 290" stroke="#141820" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Chained prisoners -->
+  <g opacity="0.75">
+    <ellipse cx="700" cy="240" rx="10" ry="12" fill="#222836"/>
+    <path d="M700 252 L700 300 M690 265 L710 265" stroke="#222836" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M700 246 Q680 236 665 248" fill="none" stroke="#6a5a30" stroke-width="1.5"/>
+    <circle cx="665" cy="248" r="3.5" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+
+    <ellipse cx="745" cy="245" rx="10" ry="12" fill="#222836"/>
+    <path d="M745 257 L745 305 M735 270 L755 270" stroke="#222836" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M745 249 Q728 238 714 250" fill="none" stroke="#6a5a30" stroke-width="1.5"/>
+    <circle cx="714" cy="250" r="3.5" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+
+    <ellipse cx="790" cy="242" rx="10" ry="12" fill="#222836"/>
+    <path d="M790 254 L790 302 M780 267 L800 267" stroke="#222836" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M790 246 Q772 235 758 247" fill="none" stroke="#6a5a30" stroke-width="1.5"/>
+    <circle cx="758" cy="247" r="3.5" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Light beam -->
+  <path d="M290 290 Q480 200 620 180 L620 320 Q480 300 290 315Z" fill="#D4AF37" opacity="0.04"/>
+
+  <!-- Sun / escape opening -->
+  <circle cx="1080" cy="55" r="45" fill="url(#sun)"/>
+  <g stroke="#F4E4BC" stroke-width="0.8" opacity="0.25">
+    <line x1="1080" y1="55" x2="1000" y2="100"/>
+    <line x1="1080" y1="55" x2="1040" y2="130"/>
+    <line x1="1080" y1="55" x2="1120" y2="120"/>
+    <line x1="1080" y1="55" x2="1060" y2="85"/>
+  </g>
+
+  <!-- Ascending figure -->
+  <g stroke="#F4E4BC" stroke-width="2" fill="none" opacity="0.75" stroke-linecap="round">
+    <circle cx="960" cy="175" r="9"/>
+    <path d="M960 184 L960 240 M950 200 L935 225 M970 200 L985 225 M960 240 L952 285 M960 240 L968 285"/>
+  </g>
+  <path d="M620 280 Q760 230 880 195 Q920 180 960 184" fill="none" stroke="url(#goldPath)" stroke-width="1.5" opacity="0.5" stroke-dasharray="5 7"/>
+
   <!-- Stalactites -->
-  <path d="M150 130 L155 170" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <path d="M350 100 L355 140" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <path d="M550 85 L553 115" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
-  <path d="M750 70 L753 100" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round"/>
+  <g fill="#1a1e28" opacity="0.6">
+    <path d="M140 90 L145 130 L135 130Z"/>
+    <path d="M360 65 L364 100 L356 100Z"/>
+    <path d="M560 50 L563 82 L557 82Z"/>
+  </g>
+
+  <!-- Floor -->
+  <path d="M0 360 Q600 345 1200 360 L1200 400 L0 400Z" fill="#06080c"/>
 </svg>

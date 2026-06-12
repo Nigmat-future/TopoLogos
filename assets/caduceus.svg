@@ -1,92 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Hermes Caduceus — RNA double helix">
   <defs>
-    <linearGradient id="marble" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#1a1f2e"/>
-      <stop offset="50%" stop-color="#0f1320"/>
+      <stop offset="50%" stop-color="#10141f"/>
       <stop offset="100%" stop-color="#080a12"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F4E4BC"/>
       <stop offset="50%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#B8941E"/>
+      <stop offset="100%" stop-color="#9A7B28"/>
     </linearGradient>
-    <linearGradient id="goldVert" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="staff" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#F4E4BC"/>
-      <stop offset="50%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#B8941E"/>
+      <stop offset="40%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8a6e28"/>
     </linearGradient>
+    <linearGradient id="strandA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a8a7c"/>
+      <stop offset="50%" stop-color="#6ab8a8"/>
+      <stop offset="100%" stop-color="#3a6a5c"/>
+    </linearGradient>
+    <linearGradient id="strandB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6a5a8a"/>
+      <stop offset="50%" stop-color="#9a8ab8"/>
+      <stop offset="100%" stop-color="#4a3a6a"/>
+    </linearGradient>
+    <filter id="wingGlow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="400" height="600" fill="url(#marble)"/>
-  <!-- Central staff -->
-  <line x1="200" y1="100" x2="200" y2="540" stroke="url(#goldVert)" stroke-width="3" stroke-linecap="round"/>
-  <!-- Staff orb at top -->
-  <circle cx="200" cy="95" r="8" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="200" cy="95" r="4" fill="#D4AF37" opacity="0.3"/>
-  <!-- Wings at top -->
-  <path d="M200 95 Q170 70 130 55 Q110 50 100 60 Q120 65 140 75 Q165 88 200 95" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
-  <path d="M200 95 Q230 70 270 55 Q290 50 300 60 Q280 65 260 75 Q235 88 200 95" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
-  <!-- Wing feather details left -->
-  <path d="M130 55 L120 48" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M140 65 L128 58" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M155 78 L142 72" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M170 88 L158 83" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Wing feather details right -->
-  <path d="M270 55 L280 48" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M260 65 L272 58" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M245 78 L258 72" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <path d="M230 88 L242 83" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Left serpent (RNA helix - going up) -->
-  <!-- Serpent body: sinusoidal path crossing the staff -->
-  <path d="M200 530 Q160 510 200 490 Q240 470 200 450 Q160 430 200 410 Q240 390 200 370 Q160 350 200 330 Q240 310 200 290 Q160 270 200 250 Q240 230 200 210 Q170 195 175 170" fill="none" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
-  <!-- Left serpent head -->
-  <path d="M175 170 C168 160 172 150 180 155 C185 158 182 168 175 170Z" fill="#D4AF37" stroke="#F4E4BC" stroke-width="1" stroke-linecap="round"/>
-  <circle cx="176" cy="160" r="1.5" fill="#0f1320"/>
-  <!-- Left serpent tongue -->
-  <path d="M168 155 L160 150 M168 155 L160 158" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-linecap="round"/>
-  <!-- Right serpent (RNA helix - going up, opposite phase) -->
-  <path d="M200 530 Q240 510 200 490 Q160 470 200 450 Q240 430 200 410 Q160 390 200 370 Q240 350 200 330 Q160 310 200 290 Q240 270 200 250 Q160 230 200 210 Q230 195 225 170" fill="none" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
-  <!-- Right serpent head -->
-  <path d="M225 170 C232 160 228 150 220 155 C215 158 218 168 225 170Z" fill="#D4AF37" stroke="#F4E4BC" stroke-width="1" stroke-linecap="round"/>
-  <circle cx="224" cy="160" r="1.5" fill="#0f1320"/>
-  <!-- Right serpent tongue -->
-  <path d="M232 155 L240 150 M232 155 L240 158" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-linecap="round"/>
-  <!-- Helix cross-rungs (base pairs) -->
-  <line x1="175" y1="510" x2="225" y2="510" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="470" x2="225" y2="470" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="430" x2="225" y2="430" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="390" x2="225" y2="390" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="350" x2="225" y2="350" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="310" x2="225" y2="310" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="270" x2="225" y2="270" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <line x1="175" y1="230" x2="225" y2="230" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
-  <!-- Base pair dots (nucleotide indicators) -->
-  <circle cx="185" cy="510" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="510" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="470" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="470" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="430" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="430" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="390" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="390" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="350" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="350" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="310" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="310" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="270" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="270" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="185" cy="230" r="2" fill="#D4AF37" opacity="0.5"/>
-  <circle cx="215" cy="230" r="2" fill="#D4AF37" opacity="0.5"/>
+
+  <rect width="400" height="600" fill="url(#bg)"/>
+
+  <!-- Staff -->
+  <rect x="196" y="115" width="8" height="430" rx="4" fill="url(#staff)"/>
+  <circle cx="200" cy="108" r="12" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+  <circle cx="200" cy="108" r="5" fill="#D4AF37" opacity="0.35"/>
+
+  <!-- Wings -->
+  <g filter="url(#wingGlow)" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
+    <path d="M200 108 Q155 75 105 58 Q82 50 72 62 Q95 68 120 82 Q158 98 200 108"/>
+    <path d="M200 108 Q245 75 295 58 Q318 50 328 62 Q305 68 280 82 Q242 98 200 108"/>
+    <!-- Feather details -->
+    <path d="M105 58 L92 48" stroke-width="1" opacity="0.6"/>
+    <path d="M120 72 L105 64" stroke-width="1" opacity="0.6"/>
+    <path d="M145 88 L130 82" stroke-width="1" opacity="0.6"/>
+    <path d="M170 100 L158 96" stroke-width="1" opacity="0.6"/>
+    <path d="M295 58 L308 48" stroke-width="1" opacity="0.6"/>
+    <path d="M280 72 L295 64" stroke-width="1" opacity="0.6"/>
+    <path d="M255 88 L270 82" stroke-width="1" opacity="0.6"/>
+    <path d="M230 100 L242 96" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- RNA strand A (left serpent / teal) -->
+  <path d="M200 530
+           C155 510 245 490 200 470
+           C155 450 245 430 200 410
+           C155 390 245 370 200 350
+           C155 330 245 310 200 290
+           C155 270 245 250 200 230
+           C155 210 245 190 200 170
+           C175 155 168 135 175 118"
+        fill="none" stroke="url(#strandA)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- RNA strand B (right serpent / violet) -->
+  <path d="M200 530
+           C245 510 155 490 200 470
+           C245 450 155 430 200 410
+           C245 390 155 370 200 350
+           C245 330 155 310 200 290
+           C245 270 155 250 200 230
+           C245 210 155 190 200 170
+           C225 155 232 135 225 118"
+        fill="none" stroke="url(#strandB)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Serpent heads -->
+  <ellipse cx="172" cy="115" rx="14" ry="10" fill="#4a8a7c" transform="rotate(-15 172 115)"/>
+  <circle cx="166" cy="112" r="2.5" fill="#10141f"/>
+  <path d="M160 114 L152 110 M160 116 L152 118" stroke="#c45c5c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <ellipse cx="228" cy="115" rx="14" ry="10" fill="#6a5a8a" transform="rotate(15 228 115)"/>
+  <circle cx="234" cy="112" r="2.5" fill="#10141f"/>
+  <path d="M240 114 L248 110 M240 116 L248 118" stroke="#c45c5c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- Base pairs -->
+  <g stroke="#F4E4BC" stroke-width="1" opacity="0.45" stroke-linecap="round">
+    <line x1="168" y1="510" x2="232" y2="510"/>
+    <line x1="168" y1="470" x2="232" y2="470"/>
+    <line x1="168" y1="430" x2="232" y2="430"/>
+    <line x1="168" y1="390" x2="232" y2="390"/>
+    <line x1="168" y1="350" x2="232" y2="350"/>
+    <line x1="168" y1="310" x2="232" y2="310"/>
+    <line x1="168" y1="270" x2="232" y2="270"/>
+    <line x1="168" y1="230" x2="232" y2="230"/>
+    <line x1="168" y1="190" x2="232" y2="190"/>
+  </g>
+  <!-- Nucleotide dots -->
+  <g>
+    <circle cx="178" cy="510" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="510" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="470" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="470" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="430" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="430" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="390" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="390" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="350" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="350" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="310" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="310" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="270" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="270" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="230" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="230" r="3" fill="#6a5a8a" opacity="0.7"/>
+    <circle cx="178" cy="190" r="3" fill="#4a8a7c" opacity="0.7"/>
+    <circle cx="222" cy="190" r="3" fill="#6a5a8a" opacity="0.7"/>
+  </g>
+
   <!-- Staff base -->
-  <ellipse cx="200" cy="545" rx="30" ry="8" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M170 545 L170 555 Q200 565 230 555 L230 545" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-  <!-- Decorative corner ornaments -->
-  <path d="M25 25 L25 55 M25 25 L55 25" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M375 25 L375 55 M375 25 L345 25" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M25 575 L25 545 M25 575 L55 575" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M375 575 L375 545 M375 575 L345 575" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round"/>
-  <!-- Small geometric accents at corners -->
-  <path d="M30 30 L35 30 L35 35" fill="none" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M370 30 L365 30 L365 35" fill="none" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M30 570 L35 570 L35 565" fill="none" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.4" stroke-linecap="round"/>
-  <path d="M370 570 L365 570 L365 565" fill="none" stroke="#F4E4BC" stroke-width="0.6" stroke-opacity="0.4" stroke-linecap="round"/>
+  <ellipse cx="200" cy="548" rx="38" ry="10" fill="none" stroke="url(#gold)" stroke-width="1.8"/>
+  <path d="M162 548 Q200 562 238 548" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <g fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.3">
+    <path d="M28 28 H52 V40 H40 V52 H28 Z"/>
+    <path d="M372 28 H348 V40 H360 V52 H372 Z"/>
+    <path d="M28 572 H52 V560 H40 V548 H28 Z"/>
+    <path d="M372 572 H348 V560 H360 V548 H372 Z"/>
+  </g>
 </svg>
